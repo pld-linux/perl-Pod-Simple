@@ -1,7 +1,7 @@
-
+#
 # Conditional build:
-%bcond_without tests	# do not perform "make test"
-
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Pod
 %define	pnam	Simple
@@ -10,7 +10,8 @@ Summary(pl):	Pod::Simple - szkielet dla analizy Pod
 Name:		perl-Pod-Simple
 Version:	2.05
 Release:	1
-License:	GPL or Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	e7a74806215bc993ab1e8e7da49c9a2b
