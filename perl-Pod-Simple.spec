@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Pod
-%define	pnam	Simple
+%define		pdir	Pod
+%define		pnam	Simple
 Summary:	Pod::Simple - framework for parsing Pod
 Summary(pl):	Pod::Simple - szkielet dla analizy Pod
 Name:		perl-Pod-Simple
