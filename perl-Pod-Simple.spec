@@ -23,14 +23,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Pod::Simple is a Perl library for parsing text in the Pod ("plain old
 documentation") markup language that is typically used for writing
 documentation for Perl and for Perl modules. The Pod format is
-explained in the perlpod man page; the most common formatter is called
-"perldoc".
+explained in the perlpod.3pm man page; the most common formatter is
+called "perldoc".
 
 %description -l pl
 Pod::Simple jest bibliotek± Perla do analizy tekstu w jêzyku
 znaczników Pod ("plain old documentation"), w którym zazwyczaj pisana
 jest dokumentacja Perla i modu³ów Perla. Format Pod jest obja¶niony na
-stronie podrêcznika dla perlpod; najpopularniejszym programem do
+stronie podrêcznika perlpod.3pm; najpopularniejszym programem do
 formatowania tej dokumentacji jest "perldoc".
 
 %prep
