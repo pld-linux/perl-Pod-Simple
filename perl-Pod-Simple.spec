@@ -6,7 +6,7 @@
 %define		pdir	Pod
 %define		pnam	Simple
 Summary:	Pod::Simple - framework for parsing Pod
-Summary(pl):	Pod::Simple - szkielet dla analizy Pod
+Summary(pl.UTF-8):   Pod::Simple - szkielet dla analizy Pod
 Name:		perl-Pod-Simple
 Version:	3.04
 Release:	1
@@ -32,11 +32,11 @@ documentation for Perl and for Perl modules. The Pod format is
 explained in the perlpod.3pm man page; the most common formatter is
 called "perldoc".
 
-%description -l pl
-Pod::Simple jest bibliotek± Perla do analizy tekstu w jêzyku
-znaczników Pod ("plain old documentation"), w którym zazwyczaj pisana
-jest dokumentacja Perla i modu³ów Perla. Format Pod jest obja¶niony na
-stronie podrêcznika perlpod.3pm; najpopularniejszym programem do
+%description -l pl.UTF-8
+Pod::Simple jest bibliotekÄ… Perla do analizy tekstu w jÄ™zyku
+znacznikÃ³w Pod ("plain old documentation"), w ktÃ³rym zazwyczaj pisana
+jest dokumentacja Perla i moduÅ‚Ã³w Perla. Format Pod jest objaÅ›niony na
+stronie podrÄ™cznika perlpod.3pm; najpopularniejszym programem do
 formatowania tej dokumentacji jest "perldoc".
 
 %prep
