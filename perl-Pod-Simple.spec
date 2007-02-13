@@ -6,7 +6,7 @@
 %define		pdir	Pod
 %define		pnam	Simple
 Summary:	Pod::Simple - framework for parsing Pod
-Summary(pl.UTF-8):   Pod::Simple - szkielet dla analizy Pod
+Summary(pl.UTF-8):	Pod::Simple - szkielet dla analizy Pod
 Name:		perl-Pod-Simple
 Version:	3.04
 Release:	1
