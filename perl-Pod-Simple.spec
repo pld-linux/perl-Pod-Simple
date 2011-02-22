@@ -8,23 +8,23 @@
 Summary:	Pod::Simple - framework for parsing Pod
 Summary(pl.UTF-8):	Pod::Simple - szkielet dla analizy Pod
 Name:		perl-Pod-Simple
-Version:	3.08
+Version:	3.15
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Pod/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	f1f37e00b58760aad44e4df652bcb679
+Source0:	http://www.cpan.org/modules/by-authors/id/D/DW/DWHEELER/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	2ebe2e9ce2f834d0db73c8a65258e887
 URL:		http://search.cpan.org/dist/Pod-Simple/
 %if %{with tests}
+BuildRequires:	perl(Test) >= 1.25
+BuildRequires:	perl(Text::Wrap) >= 98.112902
 BuildRequires:	perl-Pod-Escapes >= 1.03
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_noautoreq	'perl(overload()'
 
 %description
 Pod::Simple is a Perl library for parsing text in the Pod ("plain old
@@ -56,6 +56,9 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+# packaged as man
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorlib}/Pod/{Simple,Simple/Subclassing}.pod
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -65,4 +68,4 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/Pod/Simple.pm
 %dir %{perl_vendorlib}/Pod/Simple
 %{perl_vendorlib}/Pod/Simple/*.pm
-%{_mandir}/man3/*
+%{_mandir}/man3/Pod::Simple*.3pm*
