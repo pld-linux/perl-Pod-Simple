@@ -13,7 +13,6 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-#Source0:	http://www.cpan.org/modules/by-authors/id/D/DW/DWHEELER/%{pdir}-%{pnam}-%{version}.tar.gz
 Source0:	http://www.cpan.org/modules/by-module/Pod/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	b9d7452fa794f04590034661b3f40a2d
 URL:		http://search.cpan.org/dist/Pod-Simple/
