@@ -8,13 +8,13 @@
 Summary:	Pod::Simple - framework for parsing Pod
 Summary(pl.UTF-8):	Pod::Simple - szkielet dla analizy Pod
 Name:		perl-Pod-Simple
-Version:	3.28
+Version:	3.32
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Pod/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	ee65094e29924948ae02fe33229cc5e4
+# Source0-md5:	f05e92d19c8a7301910f133424e74ece
 URL:		http://search.cpan.org/dist/Pod-Simple/
 %if %{with tests}
 BuildRequires:	perl(Test) >= 1.25
