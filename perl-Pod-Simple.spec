@@ -2,7 +2,7 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
+%include	%{_rpmconfigdir}/macros.perl
 %define		pdir	Pod
 %define		pnam	Simple
 Summary:	Pod::Simple - framework for parsing Pod
