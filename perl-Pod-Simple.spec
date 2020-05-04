@@ -14,7 +14,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Pod/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	f05e92d19c8a7301910f133424e74ece
-URL:		http://search.cpan.org/dist/Pod-Simple/
+URL:		https://metacpan.org/release/Pod-Simple
 %if %{with tests}
 BuildRequires:	perl(Test) >= 1.25
 BuildRequires:	perl(Text::Wrap) >= 98.112902
@@ -22,6 +22,7 @@ BuildRequires:	perl-Pod-Escapes >= 1.04
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpmbuild(macros) >= 1.745
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
