@@ -51,16 +51,15 @@ formatowania tej dokumentacji jest "perldoc".
 %{?with_tests:%{__make} test}
 
 %install
-rm -rf $RPM_BUILD_ROOT
+%{__rm} -rf $RPM_BUILD_ROOT
 
-%{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+%make_install
 
 # packaged as man
 %{__rm} $RPM_BUILD_ROOT%{perl_vendorlib}/Pod/{Simple,Simple/Subclassing}.pod
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
